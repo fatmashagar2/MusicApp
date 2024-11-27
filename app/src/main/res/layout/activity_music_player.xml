@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+
+    android:layout_height="match_parent"
+    android:background="#BCAB99"
+    tools:context=".MusicPlayer">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Someone like You"
+        android:textAllCaps="true"
+
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+       android:id="@+id/tv_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textSize="22dp"
+        android:textAllCaps="true"
+        android:text="adele"/>
+
+    <ImageView
+        android:layout_width="304dp"
+        android:layout_height="401dp"
+        android:src="@drawable/music"
+        android:layout_gravity="center"/>
+
+    <SeekBar
+        android:id="@+id/seekbar_Time"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#B17825"
+
+        android:progressTint="@color/white"
+        android:thumbTint="@color/white" />
+
+    <LinearLayout
+       android:layout_gravity="center"
+       android:layout_width="300dp"
+        android:orientation="horizontal"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="00:00"
+           android:id="@+id/tv_Time"
+           android:textSize="17dp"
+           android:layout_marginEnd="200dp"
+           android:layout_gravity="center"
+           android:textColor="@color/white"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="00:00"
+           android:textSize="17dp"
+
+           android:id="@+id/total_Time"
+           android:layout_gravity="center"
+           android:layout_alignParentRight="true"
+           android:textColor="@color/white"/>
+   </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_play"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/play_button"
+        app:tint="#FFF3F3" />
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+         android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/low_volume"
+            app:tint="@android:color/white" />
+
+        <SeekBar
+            android:id="@+id/seekbar_value"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#B17825"
+
+
+            android:progressTint="@color/white"
+            android:thumbTint="@color/white" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/high_level"
+            app:tint="@android:color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>
